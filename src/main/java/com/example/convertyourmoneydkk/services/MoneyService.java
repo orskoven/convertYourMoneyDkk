@@ -86,7 +86,7 @@ public class MoneyService {
     }
 
     public void csvValutaWriterToFile() throws SQLException, IOException {
-        FileWriter fileWriter = new FileWriter("src/main/currencies.csv");
+        FileWriter fileWriter = new FileWriter("src/main/java/currencies.csv");
         fileWriter.flush();
         sc.nextLine();
         sc.nextLine();
@@ -190,7 +190,7 @@ Simple demo using JDBC to connect to a Database and getting some data.
         //Get another statement object initialized as shown.
         //Use the methods of class ResultSet in a loop
         // to display all of the data in the result.
-        FileReader fileReader = new FileReader("src/main/currencies.csv");
+        FileReader fileReader = new FileReader("src/main/java/currencies.csv");
         Scanner scanner1 = new Scanner(fileReader);
         while (scanner1.hasNext()) {
             String[] countrySplit = scanner1.nextLine().split(";");
